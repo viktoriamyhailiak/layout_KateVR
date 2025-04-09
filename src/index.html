@@ -1,19 +1,193 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Title</title>
-    <link
-      rel="stylesheet"
-      href="./styles/main.scss"
-    />
-  </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+      content="width=device-width, initial-scale=1.0"/>
+    <title>KatVR</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.scss"/>
     <script src="scripts/main.js"></script>
+  </head>
+
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar header__top-bar">
+            <div class="top-bar__left-side">
+              <a href="#" class="icon icon--logo"></a>
+
+              <div class="top-bar__language-change">
+                <span>En</span>
+                <a href="#language" class="icon icon--dropdown"></a>
+              </div>
+            </div>
+
+            <div class="top-bar__right-side">
+              <nav class="top-bar__nav">
+                <ul class="top-bar__list">
+                  <li class="top-bar__item"><a href="#" class="top-bar__link">About</a></li>
+                  <li class="top-bar__item"><a href="#" class="top-bar__link">Tech</a></li>
+                  <li class="top-bar__item"><a href="#" class="top-bar__link">Benefits</a></li>
+                  <li class="top-bar__item"><a href="#" class="top-bar__link">Contact</a></li>
+                </ul>
+              </nav>
+
+              <a href="#buy-now" class="button button--fixed">Buy Now</a>
+            </div>
+
+            <a href="#menu" class="icon icon--menu"></a>
+          </div>
+
+          <div class="header__photo"></div>
+          <h1 class="title header__title">THE NEW START OF <br><span class="title-blue">VR LOCOMOTION</span></h1>
+          <p class="header__description">
+            Discover the most comprehensive VR Locomotion system, and unlock infinite motion in any games on any platforms!
+          </p>
+          <p class="header__price">1200$</p>
+          <div class="header__play-video">
+            <a href="#" class="icon icon--play"></a>
+            <a href="#" class="header__play-video-link">Play Video</a>
+          </div>
+
+          <div class="header__bottom">
+            <div class="header__bottom-left">
+              <a href="#faq" class="header__bottom-link">FAQ</a>
+              <a href="#help" class="header__bottom-link">Help</a>
+            </div>
+
+            <div class="header__more">
+              <a href="#more" class="header__more-link">More</a>
+              <a href="#more" class="icon icon--dropdown"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside class="menu page__menu" id="menu">
+      <div class="menu__content">
+        <div class="top-bar top-bar--menu">
+          <a href="#" class="icon icon--close"></a>
+        </div>
+
+        <div class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#tech" class="nav__link">Tech</a></li>
+            <li class="nav__item"><a href="#benefits" class="nav__link">Benefits</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="#language" class="nav__link">Language</a></li>
+            <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+            <li class="nav__item"><a href="#help" class="nav__link">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="menu page__language" id="language">
+      <div class="menu__content menu__content--language">
+        <div class="top-bar top-bar--language">
+          <a href="#" class="icon icon--back"></a>
+        </div>
+
+        <div class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">English</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Arabic</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Chinese (Simplified)</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Chinese (Traditional)</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">French</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">German</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Italian</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Polish</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Ukrainian</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="menu page__faq faq" id="faq">
+      <div class="menu__content">
+        <div class="top-bar top-bar--menu">
+          <a href="#" class="icon icon--close"></a>
+        </div>
+
+        <div class="container container--aside">
+          <h2 class="title title--faq">FREQUENTLY ASKED <span class="title-blue">QUESTIONS</span></h2>
+
+          <div class="faq__blocks">
+            <div class="faq__block">
+              <input type="checkbox" id="faq1"
+              class="faq__toggle">
+              <label for="faq1" class="faq__question">What makes KAT loco different from other systems?</label>
+
+              <div class="faq__content">
+                <div class="faq__answer">
+                  Despite being approached from many different angles, all traditional VR Locomotion systems including roomscale, teleportation, and free locomotion failed to provide an optimal solution capable of integrating high immersion with convenience. KAT loco does all of that without repeating their flaws. Our system offers a complete and versatile solution for an affordable price what makes it a perfect choice for home-use. It is also 100% user friendly, wireless, universally compatible, and more! It even offers decoupled head and body directions!
+                </div>
+
+                <div class="faq__date">
+                  Last updated: Wed, June 12 2019 7:07 PM UTC +03:00
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__block">
+              <input type="checkbox" id="faq2"
+              class="faq__toggle">
+              <label for="faq2" class="faq__question">Will it decrease my motion sickness?</label>
+
+              <div class="faq__content">
+                <div class="faq__answer">
+                  Yes, KAT loco has been designed with motion sickness reduction in mind. By offering decoupled head and body directions, it helps to minimize motion sickness commonly associated with traditional VR locomotion systems. Additionally, its user-friendly and versatile design enhances comfort and immersion, further contributing to a smoother VR experience with reduced motion sickness.
+                </div>
+
+                <div class="faq__date">
+                  Last updated: Thu, June 10 2024 10:30 AM UTC +03:00
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__block">
+              <input type="checkbox" id="faq3"
+                class="faq__toggle">
+              <label for="faq3" class="faq__question">Which VR headsets is it compatible with?</label>
+
+              <div class="faq__content">
+                <div class="faq__answer">
+                    KAT loco is compatible with a wide range of VR headsets, ensuring versatility and convenience for users. Whether you're using popular models like Oculus Rift, HTC Vive, or others, KAT loco seamlessly integrates with them, offering a universal compatibility that enhances your VR experience across various platforms.
+                </div>
+
+                <div class="faq__date">
+                  Last updated: Fri, June 10 2024 3:45 PM UTC +03:00
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__block">
+              <input type="checkbox" id="faq4"
+              class="faq__toggle">
+              <label for="faq4" class="faq__question">Is it compatible with Oculus Quest?</label>
+
+              <div class="faq__content">
+                <div class="faq__answer">
+                  Yes, absolutely! KAT loco is fully compatible with Oculus Quest, ensuring that users can enjoy an enhanced VR experience on this popular headset. With its universal compatibility, KAT loco seamlessly integrates with Oculus Quest, providing users with a versatile and immersive locomotion solution.
+                </div>
+
+                <div class="faq__date">
+                  Last updated: Sun, March 10 2023 9:15 AM UTC +03:00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
   </body>
 </html>

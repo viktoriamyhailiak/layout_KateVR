@@ -1,0 +1,17 @@
+.title{
+  font-weight: 900;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+
+
+  &-blue{
+    font-weight: 400;
+    color: rgba(5, 194, 223, 1);
+  }
+
+  &--faq{
+    font-size: 21px;
+    margin-top: 11px;
+  }
+}

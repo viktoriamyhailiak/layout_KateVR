@@ -1,0 +1,68 @@
+.icon{
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 9px;
+
+  @include hover(scale, 1.2);
+
+  @include on-tablet{
+    width: 30px;
+    height: 13px;
+  }
+
+  &--logo{
+    background-image: url(/src/images/katVR-logo.svg);
+    width: 58px;
+    height: 12px;
+
+    @include on-tablet{
+      width: 67px;
+      height: 14px;
+    }
+
+    @include on-desktop{
+      width: 77px;
+      height: 16px;
+    }
+  }
+
+  &--menu{
+    background-image: url(/src/images/menu-icon.svg);
+
+    @include on-tablet{
+      width: 30px;
+      height: 13px;
+    }
+
+    @include on-desktop{
+      display: none;
+    }
+  }
+
+  &--close{
+    background-image: url(/src/images/close-icon.svg);
+    width: 17px;
+    height: 17px;
+  }
+
+  &--play{
+    background-image: url(/src/images/play-video-icon.svg);
+    width: 85px;
+    height: 66px;
+  }
+
+  &--dropdown{
+    background-image: url(/src/images/dropdown-icon.svg);
+    width: 9px;
+    height: 6px;
+  }
+
+  &--back{
+    background-image: url(/src/images/back-icon.svg);
+    width: 9px;
+    height: 17px;
+  }
+}
