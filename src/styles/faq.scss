@@ -1,48 +1,60 @@
-.faq{
-  min-height: 100vh;
-
-  &__blocks{
-    margin-top: 30px;
-    margin-bottom: 13px;
+.faq {
+  &__blocks {
     display: flex;
     flex-direction: column;
     gap: 13px;
-  }
 
-  &__block{
-    padding: 18px 12px;
-    border-radius: 4px;
-    border: 1px solid rgba(5, 194, 223, 1);
-    box-sizing: border-box;
-  }
+    margin-top: 30px;
+    margin-bottom: 13px;
 
-  &__question{
-    color: rgba(5, 194, 223, 1);
-    display: block;
-    margin-bottom: 18px;
-    cursor: pointer;
-  }
-
-  &__answer{
-    color: rgba(146, 146, 146, 1);
-    margin-bottom: 40px;
-  }
-
-  &__date{
-    color: rgba(84, 84, 84, 1);
-    font-size: 12px;
-  }
-
-  &__content{
-    max-height: 0%;
-    overflow: hidden;
-  }
-
-  &__toggle{
-    display: none;
-
-    &:checked .faq__content{
-      max-height: 100%;
+    @include on-tablet {
+      gap: 18px;
+      margin-bottom: 50px;
     }
+
+    @include on-desktop {
+      gap: 13px;
+      margin-block: 50px;
+    }
+  }
+
+  &__block {
+    box-sizing: border-box;
+    padding: 18px 12px;
+    border: 1px solid $main-turquoise;
+    border-radius: 4px;
+
+    @include on-tablet {
+      padding: 15px 30px;
+    }
+
+    @include on-desktop {
+      padding: 18px 29px;
+    }
+  }
+
+  &__question {
+    cursor: pointer;
+    color: $main-turquoise;
+    list-style: none;
+  }
+
+  &__answer {
+    margin-top: 18px;
+    margin-bottom: 40px;
+    color: $grey-text;
+
+    @include on-tablet {
+      margin-bottom: 15px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__date {
+    font-size: 12px;
+    color: $dark-grey-text;
   }
 }

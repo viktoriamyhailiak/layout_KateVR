@@ -1,19 +1,24 @@
-.menu{
-  background-color: rgba(25, 21, 54, 1);
-  color: rgba(255, 255, 255, 1);
-  height: 100vh;
+.menu {
+  color: $main-white;
+  background-color: $main-purple;
 
-  @include on-tablet{
+  @include on-tablet {
     height: max-content;
   }
 
-  &__content{
-    @include on-tablet{
-      padding-bottom: 139px;
+  &--auto-hight {
+    height: auto;
+  }
+
+  &__content {
+    &--language {
+      padding-bottom: 26px;
     }
 
-    &--language{
-      padding-bottom: 26px;
+    &--nav {
+      @include on-tablet {
+        padding-bottom: 139px;
+      }
     }
   }
 }

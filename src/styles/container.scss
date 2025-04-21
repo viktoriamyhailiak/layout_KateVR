@@ -1,15 +1,11 @@
-.container{
+.container {
   @include padding-inline;
 
-  margin-inline: auto;
   max-width: 1060px;
+  margin-inline: auto;
 
-  &--aside{
-    @include on-tablet{
-      padding-inline: 152px;
-    }
-
-    @include on-desktop{
+  &--aside {
+    @include on-desktop {
       padding-inline: 90px;
     }
   }
