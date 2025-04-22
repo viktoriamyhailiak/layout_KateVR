@@ -130,7 +130,7 @@
 
     @include on-desktop {
       display: flex;
-      grid-column: 1/-1;
+      grid-column: 1/7;
       gap: 404px;
       padding-block: 84px;
     }
